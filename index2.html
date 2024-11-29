@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Proyecto</title>
+<style>/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.menu {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ #menu{
+    display: none;
+  }
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom:100px;
+ 
+  
+}
+
+.menu-icono {
+  display: none;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Inicio Styles */
+.inicio {
+  background-color: gainsboro;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.inicio img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.inicio h1{
+  margin-bottom: 10px;
+}
+h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* Main Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.header img{
+   width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.integrantes {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.integrantes img {
+  width: 100%;
+  height:1100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.integrantes-carrera img {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.integrantes h2 {
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Discografia Styles */
+
+.discografia {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discografia table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.discografia th, .discografia td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.discografia th {
+  background-color: #f0f0f0;
+}
+
+/* Conciertos Styles */
+
+.conciertos {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.conciertos img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.conciertos h5 {
+  margin-bottom: 10px;
+}
+h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Curiosidades Styles */
+
+.curiosidades {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.curiosidades img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.curiosidades h6 {
+  margin-bottom: 10px;
+}
+h6 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Videos Styles */
+
+.videos {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.videos h7 {
+  margin-bottom: 10px;
+}
+.videos img{
+   width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+h7 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.videos a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 991px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar li {
+    margin-bottom: 10px;
+  }
+
+.inicio img {
+  width: 100%;
+  height: 200px;
+  
+}
+  .integrantes {
+    margin-bottom: 10px;
+  }
+.integrantes img {
+  width: 100%;
+  height: 400px;
+  
+}
+
+.integrantes-carrera img {
+  width: 100%;
+  height: 250px;
+ 
+  }
+  .conciertos {
+    margin-bottom: 10px;
+  }
+.conciertos img {
+  width: 100%;
+  height: 200px;
+ 
+}
+  .curiosidades {
+    margin-bottom: 10px;
+  }
+.curiosidades img {
+  width: 100%;
+  height: 200px;
+ 
+}
+  .videos {
+    margin-bottom: 10px;
+  }
+.videos img{
+   width: 100%;
+  height: 400px;
+ 
+}
+}
+
+@media (max-width: 991px) {
+  .menu {
+    flex-direction: column;
+  }
+  #menu{
+    display: none;
+  }
+  . menu label{
+    cursor: pointer;
+  }
+  .logo {
+    margin-bottom: 10px; 
+    
+  }
+  .menu-icono {
+    display: block;
+    cursor: pointer;
+height=50;
+width=50;
+  }
+  .navbar ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #444;
+  }
+  .navbar li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navbar a {
+    display: block;
+  }
+  #menu:checked + label + .navbar ul {
+    display: block;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  
+  
+  
+  
+ 
+    <main class="integrantes">
+    <div class="integranres-content container">
+  
+      <div class="integrantes-carrera">
+        <div class="integrantes-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/The_Rose_2023.jpg" alt="">
+          <h3>Carrera</h3>
+          <p>
+               <br>Pre-Debut.
+      <br>
+      <br>The Rose, antes de debutar como grupo, ya llevaban mucho tiempo publicando covers en las redes sociales y haciendo buskings en las calles de Corea del Sur.
+      <br>
+      <br>2017: Debut con su Primer Single "Sorry"
+      <br>
+      <br>El 3 de Agosto del 2017, The Rose debuta con su primer single "Sorry" junto el MV. "Sorry" es una canción que ellos mismos han producido y compuesto además de crear su propia letra para completar todo el trabajo de la creación del single. "Sorry", es una canción de amor triste basada en la música pop británica. Expresa un hombre que lamenta profundamente a su amante egoísta y reza por la otra persona para poder Vuelve a su lado. Obtuvo el octavo lugar en la lista de música pop coreana de iTunes, y se clasificó entre los 10 primeros en la lista de música pop coreana de ocho países, incluidos Canadá, Gran Bretaña, Alemania y Francia. 
+      <br>
+      <br>Regreso con un Segundo Single "Like We Used To"
+      
+      <br> <br>El 01 de noviembre, The Rose regresa con segundo single "Like We Used To" después de 3 meses con su primer single debut "Sorry", "Like We Used To" cuenta con dos canciones, la principal "Like We Used To" y la segunda "Sorry" su anterior canción debut. En noviembre, se lanzó el segundo sencillo "Like We Used To", que combina el estilo de rock lírico y cuenta el estado de ánimo inolvidable de los recuerdos del pasado.
+      <br>
+      <br>2018: Regreso con su Primer Mini Album "Void"
+      <br>
+      <br>El 9 de Abril de 2018, se reveló que The Rose estaría de vuelta el 16 de Abril con su primer mini álbum "Void", el cual contendrá sus dos canciones lanzadas anteriormente, 3 canciones nuevas y los instrumentales de las canciones "Sorry" "I.L.Y" y "Baby".
+      <br>
+      <br>El 15 de Abril, se lanzo el MV de 'Baby'.
+      <br>
+      <br>El 16 de Abril, se lanzó el mini-álbum "Dawn" a las plataformas de música.
+      <br>
+      <br>El 23 de mayo, se lanzo un MV Special de "I.L.Y".
+      <br>
+      <br>Regreso con su Segundo Mini Album "Dawn"
+      <br>
+     <br>El 18 de septiembre, The Rose anunció oficialmente su regreso. La banda idol volverá con su segundo mini album titulado "Dawn" el cual contendrá las canciones " I Don´t Know You" "She's in the rain" "Take me Down" "Insomnia" y tambien incluye una pista instrumental de She´s in the Rain. Este es su regreso después de 6 meses desde el album "Void" en abril.
+      <br>
+      <br>2019: Regreso con su Tercer Single 'Red'
+      <br>
+      <br>The Rose regresará con su tercer single, "Red", el 13 de Agosto a las 6 PM KST. 
+      <br>
+      <br>2022-presente: regreso y nueva label
+      <br>
+      <br>Tras el regreso de Dojoon, Hajoon y Jaehyeong del servicio militar, y el lanzamiento del álbum en solitario de Woosung, Moth, Woosung confirmó el sello propio de la banda, Windfall. En agosto de 2022, la banda firmó con Transparent Arts de Far East Movement como su nuevo sello, con Transparent y Wasserman Music representando a la banda. El 7 de octubre lanzaron el sencillo "Sour" junto con su primer álbum de estudio, Heal. Además, en apoyo de Heal, anunciaron su gira mundial, Heal Together World Tour, con fechas en Norteamérica, Sudamérica, Europa y Asia desde 2022 hasta 2023.
+      <br>
+      <br>El 21 de abril de 2023, Suga de BTS colaboró ​​con Woosung y el fallecido Ryuichi Sakamoto en una canción titulada "Snooze", que es la novena pista del álbum en solitario, D-Day.
+      <br>
+      <br>El 21 de julio de 2023, lanzaron su sencillo "Back To Me/Alive" con el vídeo musical de la canción "Back To Me" seguido de un vídeo musical de "Alive" el 29 de julio de 2023. Su segundo álbum de estudio, Dual, lanzado el 22 de septiembre de 2023.
+      <br>
+      <br>En octubre de 2023, su álbum “DUAL” llegó a la lista Billboard 200 en el puesto 83 en su primera semana de lanzamiento. Además de figurar en las listas 200, también hicieron un debut trascendental en el lanzamiento de Transparent Arts con el puesto número 1 en Artistas emergentes, #33 en la lista de artistas, #5 en ventas de álbumes, #5 en ventas de álbumes actuales, #3 en álbumes alternativos actuales, #2 en álbumes de rock actuales, #7 en álbumes digitales y #2 en álbumes de Internet. Además, la banda comenzó su gira Dawn to Dusk por Estados Unidos y Canadá el 4 de octubre de 2023, seguida de la gira por Filipinas el 26 de enero de 2024.
+          </p>
+        </div>
+      </div>
+      
+      
+    </div>
+    </main>
+     <footer class="footer">
+<a href="index.html">Volver al inicio</a></li>
+  
+</footer>  
+        
+</body>
+</html>
+
+
